@@ -6,59 +6,217 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Evan Kirschenmann's Portfolio</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/54a39be587.js" crossorigin="anonymous"></script> <!-- adds in some extra icons from fontawesome.com for the services section. -->
     </head>
 
-    <h1>
-        Hey, I'm Evan Kirschenmann
-    </h1>
-
     <body>
-        <section id="About Me">
-            <h2>About Me</h2>
-                <p>
-                I am a tech and automotive enthusiast with a passion to constantly learn and improve. Combine my various experience in IT, Web Design, Computer 
-                </p>
-        </section>
-        <section id="Skills and Experiences">
-            <h2>Skills and Experience</h2>
-                <ul>
-                    <li>5+ years of computer hardware, software, operating systems, and computer literacy experience</li>
-                    <li>2.5 years of T1/T2 IT Help Desk experience</li>
-                    <li>2.5 years of Wordpress and Web Design experience including Apache, PHP, CSS, HTML, DNS, and content creation</li>
-                    <li>2 years of Email, Network, and System Administration </li>
-                    <li>2 years of virtualization using Hyper-V, VMware ESXi, and Unraid</li>
-                    <li>2 years Microsoft Office 365 experience</li>
-                    <li>2 years of Intuit QuickBooks server administration experience</li>
-                    <li>1 year of CyberSecurity experience using Fortinet products</li>
-                    <li>1 year of Active Directory experience</li>
-                    <li>1 year of CNC machining with ANCAs</li>
-                    <li>1 year of cloud computing with Google Cloud and Dropbox</li>
-                    <li>Less than 1 year of MySQL experience</li>
-                    <li>Less than 1 year of Car Audio and Video experience</li>
-                    
-                </ul>
-        </section>
+        <div id="header">
+            <div class="container">
 
-        <section id="Projects">
-            <h2>Projects</h2>
-                <ul> 
-                    <li>Studying diffusion furnaces and diffusion process for semiconductor manufacturing while working at TSMC Fab 21 in Arizona.</li>
-                    <li>Learning virtualized networking services via PiHole and OPNsense virtual machines in my homelab.</li>
-                    <li>Repairing and upgrading the audio system in my daily driver by adding a head unit, component speakers with inline crossovers, and rear coaxial speakers.</li>
-                </ul>
-        </section>
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#Projects">Projects</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <h1>
+                        Versatile IT Expert with Manufacturing and Automotive background
+                    </h1>
+                    <p> 
+                        Hi, I'm <span>Evan</span>
+                    </p>
+                </div>
+            </div>
+        </div>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-                <p>If you'd like to get in touch, feel free to reach out via email at <a href="mailto:evanjkirschenmann@gmail.com">evanjkirschenmann@gmail.com</a>.
-                </p>
-        </section>
+        <div id="content">
+<!-- --------------------about section of homepage with clickable buttons for pulling up Skills, Experience, and Education----------------------- -->
+            <div id="about">
+                <div class="container">
+                    <div class="row">
 
-        <footer>
-            <p>
-                &copy; 2023 Evan Kirschenmann Portfolio Website
-            </p>
-        </footer>
+                        <div class="about-col-1">
+                            <!--need to create an image for the "about me" section column here-->
+                            <img src="images/about-me-selfie.jpg">
+                        </div>
 
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p> I am a tech and automotive enthusiast with a passion to constantly learn and improve. Combining my various experience in IT, Web Design, Computer hardware, software, operating systems, along with manufacturing, semiconductors, and automotive work proves I can get up to speed to work in any modern job quickly. </p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+
+                        <!------------- Skills Tab of About Me ----------------------------- -->
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>IT Expert</span><br>Systems and Network Administration, Hardware and software installation and configuration, Cybersecurity, Troubleshooting, Performance Optimization and reporting, training, budgeting, and staying current with industry trends.</li>
+                                    <li><span>Full Stack Web Design and Development</span><br>Designing and developing full stack websites, including this one you are currently looking at via HTML, CSS, JavaScript, PHP, Apache, Web Hosting, and DNS.</li>
+                                    <li><span>Semiconductor Manufacturing</span><br>Process optimization for semiconductor diffusion furnace manufacturing.</li>
+                                    <li><span>CNC Manufacturing</span><br>Transforming ideas into reality and optimizing for cost and throughput.</li>
+                                    <li><span>Car Audio System Design and Installation</span><br>Experience with aftermarket car audio system designing and installation</li>
+                                </ul>
+                            </div>
+
+                        <!------------- Experience Tab of About Me ----------------------------- -->
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>5+ years of computer hardware, software, operating systems, and computer literacy experience</span></li>
+                                    <li><span>2.5 years of T1/T2 IT Help Desk experience</span></li>
+                                    <li><span>2.5 years of Wordpress and Web Design experience including Apache, PHP, CSS, HTML, DNS, and content creation</span></li>
+                                    <li><span>2 years of Email, Network, and System Administration</span></li>
+                                    <li><span>2 years of virtualization using Hyper-V, VMware ESXi, and Unraid</span></li>
+                                    <li><span>2 years Microsoft Office 365 experience</span></li>
+                                    <li><span>2 years of Intuit QuickBooks server administration experience</span></li>
+                                    <li><span>1 year of CyberSecurity experience using Fortinet products</span></li>
+                                    <li><span>1 year of Active Directory experience</span></li>
+                                    <li><span>1 year of CNC machining with ANCAs</span></li>
+                                    <li><span>1 year of cloud computing with Google Cloud and Dropbox</span></li>
+                                    <li><span>Less than 1 year of MySQL experience</span></li>
+                                    <li><span>Less than 1 year of Car Audio and Video experience</span></li>
+                                    <li><span>Less than 1 year of Semiconductor Manufacturing experience</span></li>  
+                                    <li><span>Less than 1 year of Diffusion Furnace Process Technician experience</span></li>                                   
+                                </ul>
+                            </div>
+
+                        <!------------- Education Tab of About Me ----------------------------- -->
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>Associates in Economics</span><br>Fresno City College, 2016-2020</li>
+                                    <li><span>High School Diploma</span><br>Design Science Middle College High, 2016-2020</li>                  
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- --------------------Services----------------------- -->
+                            <div id="services">
+                                <div class="container">
+
+                                    <h1 class="sub-title">My Services</h1>
+                                    <div class="services-list">
+
+                                            <div>
+                                                <i class="fa-solid fa-server"></i> <!-- server icon -->
+                                                <h2>IT Consulting</h2>
+                                                <p>I provide personalized IT consulting services to help you navigate technology challenges and make informed decisions for your business. Whether you need support with hardware or software implementation, general troubleshooting, or improving your IT strategies, I will guide you every step of the way. My focus is on delivering practical, personalized solutions for your needs.</p>
+                                                <a href="#">Learn more</a> <!-- need to add a link to a more thorough description of my IT services here, on a page that includes links to some of my IT projects. -->
+                                            </div>
+
+                                            <div>
+                                                <i class="fa-solid fa-computer"></i> <!-- computer icon -->
+                                                <h2>Home Electronics Technician</h2>
+                                                <p>I provide home electronics and computer technician services including but not limited to: remote support and maintenance, computer diagnostics and troubleshooting, custom PC builds and gaming setups, NAS and home media server installation, personalized tech consultations and advice.</p>
+                                                <a href="#">Learn more</a> <!-- need to add a link to a more thorough description of my home electronics technician services here on a page that includes some more personalized services and also contains parts lists and pictures of some of the custom computers that I have built.-->
+                                            </div>
+
+                                            <div>
+                                                <i class="fa-solid fa-code"></i> <!-- code icon -->
+                                                <h2>Web Development</h2>
+                                                <p>As a full stack web developer and web designer, I will work with your team to combine front-end aesthetics with back-end functionality to create visually appealing, user-friendly applications tailored to client needs.</p>
+                                                <a href="#">Learn more</a> <!-- need to add a link to a more thorough description of my home electronics technician services here on a page that includes some more personalized services and also contains parts lists and pictures of some of the custom computers that I have built.-->
+                                            </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+<!-------------------------------------------------- Portfolio ----------------------------------------------->
+                            <div id="portfolio">
+                                <div class="container">
+
+                                    <h1 class="sub-title">My Work</h1>
+                                    <div class="work-list">
+
+                                        <div class="work">
+                                            <img src="images/blackworkpc.jpg"> <!-- add images of my work here -->
+                                            <div class="layer">
+                                                <h3>Custom Gaming Computer</h3>
+                                                <p>An example of a gaming computer custom built by me.</p>
+                                                <a href="#">
+                                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> <!-- external link icon -->
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="work">
+                                            <img src="images/martekprober-frontpage.png"> <!-- add images of my work here -->
+                                            <div class="layer">
+                                                <h3>Ecommerce Website</h3>
+                                                <p>The first website I built for a small business in 2022.</p>
+                                                <a href="https://martekprober.com/" target="_blank" rel="noopener noreferrer">
+                                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> <!-- external link icon -->
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="work">
+                                            <img src="images/sedona-nas/hard-drives.jpg"> <!-- add images of my work here -->
+                                            <div class="layer">
+                                                <h3>Custom Budget NAS</h3>
+                                                <p>An example of a budget minded, high capacity, highly upgradable NAS I built for a small business in 2022.</p>
+                                                <a href="#">
+                                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> <!-- external link icon -->
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+<!-- --------------------Contact----------------------- -->
+            <div class="container">
+                <section id="contact">
+                    <h2>Contact Me</h2>
+                        <p>If you'd like to get in touch, feel free to reach out via email at <a href="mailto:evanjkirschenmann@gmail.com">evanjkirschenmann@gmail.com</a>.
+                        </p>
+                </section>
+            </div>
+
+        </div>
+
+<!-- --------------------Footer----------------------- -->
+        <div id="footer">
+            <footer>
+                <p><br>&copy; 2024 Evan Kirschenmann Portfolio Website</p>
+            </footer>
+        </div>
+
+<!------------ pulls in the JS scripts for site functionality for tab links and content under "About" section---------->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+
+            /* removes active status classes to div when clicked, pulling CSS script from styles.css to not display the content */
+            for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+            }
+
+            /* adds active status classes to div when clicked, pulling CSS script from styles.css to display the content */
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    
     </body>
 </html>
