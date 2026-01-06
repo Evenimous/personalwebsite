@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evan Kirschenmann's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/54a39be587.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!------------------------------------ HEADER ------------------------------------- -->
+<div id="header">
+
+    <nav class="site-nav">
+        <img src="images/logo-V2.png" class="logo" alt="Evan Kirschenmann Logo">
+
+        <!-- Hamburger toggle -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+</div>
+
+<div id="content"> <!-- all content on the site below NAV goes in this div-->
+
+
+<!---------------------------------------------------- HERO SECTION ---------------------------------------------------->
+
+<div id="hero">
+    <div class="container">
+        <div class="hero-text">
+            <h1>
+                What does it take to build <span>RELIABLE</span> IT systems in high-pressure environments?
+            </h1>
+            <p>
+                Hi, I'm <span>Evan</span>
+            </p>
+        </div>
+
+        <!-- foreground headshot -->
+        <img
+            src="images/Evan-Kirschenmann-Headshot-Rounded-No-BG.png"
+            alt="Evan Kirschenmann Headshot"
+            class="hero-headshot"
+        >
+    </div>    
+</div>
+
+<!----------------------------------- ABOUT ----------------------------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+
+            <div class="about-col-1">
+                <img src="images/RSX-suspension.jpg">
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I am a tech and automotive enthusiast with a passion to constantly learn and improve.
+                    Combining my various experience in IT, Web Design, Computer hardware, software,
+                    operating systems, along with manufacturing, semiconductors, and automotive work
+                    proves I can get up to speed to work in any modern job quickly.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>IT Expert</span><br>Systems and Network Administration, Hardware and software installation and configuration, Cybersecurity, Troubleshooting, Performance Optimization and reporting, training, budgeting, and staying current with industry trends.</li>
+                        <li><span>Full Stack Web Design and Development</span><br>Designing and developing full stack websites, including this one you are currently looking at via HTML, CSS, JavaScript, PHP, Apache, Web Hosting, and DNS.</li>
+                        <li><span>Semiconductor Manufacturing</span><br>Process optimization for semiconductor diffusion furnace manufacturing.</li>
+                        <li><span>CNC Manufacturing</span><br>Transforming ideas into reality and optimizing for cost and throughput.</li>
+                        <li><span>Car Audio System Design and Installation</span><br>Experience with aftermarket car audio system designing and installation</li>
+                        <li><span>Automotive Repair</span><br>Replaced clutches, suspension components, and performed routine maintenance on Toyota, Acura, and Mazda cars.</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>6+ years</span> of computer hardware, software, operating systems, and computer literacy experience</li>
+                        <li><span>3 years</span> of T1/T2 IT Help Desk experience</li>
+                        <li><span>3 years</span> of Web Design using Wordpress, PHP, CSS, and HTML, Apache, DNS, and Content Creation</li>
+                        <li><span>2 years</span> of Active Directory experience</li>
+                        <li><span>2 years</span> of Email, Network, and System Administration</li>
+                        <li><span>2 years</span> of virtualization using Hyper-V, VMware ESXi, and Unraid</li>
+                        <li><span>2 years</span> Microsoft Office 365 experience</li>
+                        <li><span>2 years</span> of Intuit QuickBooks server administration experience</li>
+                        <li><span>2 years</span> of Car Audio and Video experience</li>
+                        <li><span>2 years</span> of Semiconductor Manufacturing experience</li>
+                        <li><span>1 year</span> of Diffusion Furnace Process Technician experience</li>
+                        <li><span>1 year</span> of cloud computing with Google Cloud, AWS, Azure, and Dropbox</li>
+                        <li><span>1 year</span> of CyberSecurity experience using Fortinet products</li>
+                        <li><span>1 year</span> of CNC machining with ANCAs</li>
+                        <li><span>Less than 1 year</span> of MySQL experience</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>AWS CCP (Certified Cloud Practitioner)</span><br>Self-study, November 2025</li>
+                        <li><span>CompTIA A+</span><br>Self-study, April 2025</li>
+                        <li><span>Google IT Support Professional Certification</span><br>Self-study, May 2022</li>
+                        <li><span>Associates in Economics</span><br>Fresno City College, 2016-2020</li>
+                        <li><span>High School Diploma</span><br>Design Science Middle College High, 2016-2020</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- --------------------Services----------------------- -->
+<div id="services">
+    <div class="container">
+
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+
+                <div>
+                    <i class="fa-solid fa-server"></i> <!-- server icon -->
+                    <h2>IT Consulting</h2>
+                    <p>I provide personalized IT consulting services to help you navigate technology challenges and make informed decisions for your business. Whether you need support with hardware or software implementation, general troubleshooting, or improving your IT strategies, I will guide you every step of the way. My focus is on delivering practical, personalized solutions for your needs.</p>
+                    <a href="#">Learn more</a> <!-- need to add a link to a more thorough description of my IT services here, on a page that includes links to some of my IT projects. -->
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-computer"></i> <!-- computer icon -->
+                    <h2>Home Electronics Technician</h2>
+                    <p>I provide home electronics and computer technician services including but not limited to: remote support and maintenance, computer diagnostics and troubleshooting, custom PC builds and gaming setups, NAS and home media server installation, personalized tech consultations and advice.</p>
+                    <a href="#">Learn more</a> <!-- need to add a link to a more thorough description of my home electronics technician services here on a page that includes some more personalized services and also contains parts lists and pictures of some of the custom computers that I have built.-->
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code"></i> <!-- code icon -->
+                    <h2>Web Development</h2>
+                    <p>As a full stack web developer and web designer, I will work with your team to combine front-end aesthetics with back-end functionality to create visually appealing, user-friendly applications tailored to client needs.</p>
+                    <a href="#">Learn more</a> <!-- need to add a link to a more thorough description of my home electronics technician services here on a page that includes some more personalized services and also contains parts lists and pictures of some of the custom computers that I have built.-->
+                </div>
+
+        </div>
+    </div>
+</div>
+
+<!-------------------------------------------------- Portfolio ----------------------------------------------->
+<div id="portfolio">
+    <div class="container">
+
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+
+            <div class="work">
+                <img src="images/blackworkpc.jpg"> <!-- add images of my work here -->
+                <div class="layer"> <!-- add content to display on hover or tap here -->
+                    <h3>Custom Gaming Computer</h3>
+                    <p>An example of a gaming computer custom built by me.</p>
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> <!-- external link icon -->
+                    </a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/martekprober-frontpage.png"> <!-- add images of my work here -->
+                <div class="layer"> <!-- add content to display on hover or tap here -->
+                    <h3>Ecommerce Website</h3>
+                    <p>The first website I built for a small business in 2022.</p>
+                    <a href="https://martekprober.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> <!-- external link icon -->
+                    </a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/sedona-nas/hard-drives.jpg"> <!-- add images of my work here -->
+                <div class="layer"> <!-- add content to display on hover or tap here -->
+                    <h3>Custom Budget NAS</h3>
+                    <p>An example of a budget minded, high capacity, highly upgradable NAS I built for a small business in 2022.</p>
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> <!-- external link icon -->
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-------------------------------------------------- Contact ----------------------------------------------->
+<section id="contact">
+    <div class="container">
+
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="contact-list">
+
+            <div class="contact">
+                <img src="images/linkedin-logo.png"> <!-- add images of contact methods here -->
+                <div class="layer"> <!-- add content to display on hover or tap here -->
+                    <h3>LinkedIn</h3>
+                    <p>Click to see my LinkedIn page.</p>
+                    <a href="https://www.linkedin.com/in/evan-kirschenmann/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> <!-- external link icon -->
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact">
+                <img src="images/github-logo.png"> <!-- add images of contact methods here -->
+                <div class="layer"> <!-- add content to display on hover or tap here -->
+                    <h3>GitHub</h3>
+                    <p>Click to see my GitHub Page</p>
+                    <a href="https://github.com/Evenimous" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> <!-- external link icon -->
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+<div id="footer">
+    <footer>
+        <p>&copy; <span id="year"></span> Evan Kirschenmann Portfolio Website</p>
+    </footer>
+</div>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
