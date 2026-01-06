@@ -179,7 +179,7 @@ html, body{
     min-height: 90vh;
     position: relative;
 
-    background-image: url(images/Shaded-Background.PNG); /* Shaded background behind all "Hero" content */
+    background-image: url(images/Shaded-Background.png); /* Shaded background behind all "Hero" content */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
